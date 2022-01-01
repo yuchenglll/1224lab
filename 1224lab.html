@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p id = "answer"></p>
+	<script>
+		var input;	
+		input = window.prompt("input data");
+		input2 = window.prompt("input a char to search");
+		var letter1 = input.indexOf(input2);
+		var letter2 = input.lastIndexOf(input2);
+		var letter3 = input.lastIndexOf(input2,3);
+		document.getElementById("answer").innerHTML = letter1+"<br>"+letter2+"<br>"+letter3;
+
+	</script>
+</body>
+</html>
